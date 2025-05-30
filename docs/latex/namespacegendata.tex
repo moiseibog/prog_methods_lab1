@@ -1,0 +1,122 @@
+\doxysection{gendata Namespace Reference}
+\hypertarget{namespacegendata}{}\label{namespacegendata}\index{gendata@{gendata}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacegendata_a86b9701fb900d76832eecca008f3dd87}{generate\+\_\+teams}} (n)
+\item 
+\mbox{\hyperlink{namespacegendata_aceef7320a547f965505323944c8a7be2}{save\+CSV}} (\mbox{\hyperlink{namespacegendata_adbc3f63a6a9bfdac28546b618a001ed1}{data}}, \mbox{\hyperlink{namespacegendata_aeb4b164a022373978db12ef19b0fac3c}{filename}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacegendata_a45463bc76e5ddaf5cec47c0e6f9e1505}{fake}} = Faker()
+\item 
+list \mbox{\hyperlink{namespacegendata_aa46a3f4f5e20694b14ffea69522c6d19}{countries}}
+\item 
+dict \mbox{\hyperlink{namespacegendata_aa9574987c828994756e64ce14a1a2b44}{clubs}}
+\item 
+list \mbox{\hyperlink{namespacegendata_ac6011555d02d32471e3cabaef19573cc}{positions}} = \mbox{[}\textquotesingle{}вратарь\textquotesingle{}, \textquotesingle{}защитник\textquotesingle{}, \textquotesingle{}полузащитник\textquotesingle{}, \textquotesingle{}нападающий\textquotesingle{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacegendata_a2c917a34167d38bd2aed8c1a3b456863}{position\+\_\+probs}} = \mbox{[}0.\+1, 0.\+3, 0.\+3, 0.\+3\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacegendata_abe5b43d1cb75641c8b692ffb6e46b945}{sample\+\_\+sizes}} = \mbox{[}100, 200, 500, 1000, 1200, 1500, 2000, 5000, 10000, 50000\mbox{]}
+\item 
+\mbox{\hyperlink{namespacegendata_adbc3f63a6a9bfdac28546b618a001ed1}{data}} = \mbox{\hyperlink{namespacegendata_a86b9701fb900d76832eecca008f3dd87}{generate\+\_\+teams}}(i)
+\item 
+str \mbox{\hyperlink{namespacegendata_aeb4b164a022373978db12ef19b0fac3c}{filename}} = f"{}dataset\+\_\+\{i\}.csv"{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacegendata_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacegendata_a86b9701fb900d76832eecca008f3dd87}\index{gendata@{gendata}!generate\_teams@{generate\_teams}}
+\index{generate\_teams@{generate\_teams}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{generate\_teams()}{generate\_teams()}}
+{\footnotesize\ttfamily \label{namespacegendata_a86b9701fb900d76832eecca008f3dd87} 
+gendata.\+generate\+\_\+teams (\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegendata_aceef7320a547f965505323944c8a7be2}\index{gendata@{gendata}!saveCSV@{saveCSV}}
+\index{saveCSV@{saveCSV}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{saveCSV()}{saveCSV()}}
+{\footnotesize\ttfamily \label{namespacegendata_aceef7320a547f965505323944c8a7be2} 
+gendata.\+save\+CSV (\begin{DoxyParamCaption}\item[{}]{data}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacegendata_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacegendata_aa9574987c828994756e64ce14a1a2b44}\index{gendata@{gendata}!clubs@{clubs}}
+\index{clubs@{clubs}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{clubs}{clubs}}
+{\footnotesize\ttfamily \label{namespacegendata_aa9574987c828994756e64ce14a1a2b44} 
+dict gendata.\+clubs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'Россия'}:\ [\textcolor{stringliteral}{'ЦСКА'},\ \textcolor{stringliteral}{'Зенит'},\ \textcolor{stringliteral}{'Спартак'},\ \textcolor{stringliteral}{'Локомотив'},\ \textcolor{stringliteral}{'Краснодар'}],}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'Бразилия'}:\ [\textcolor{stringliteral}{'Фламенго'},\ \textcolor{stringliteral}{'Сантос'},\ \textcolor{stringliteral}{'Палмейрас'},\ \textcolor{stringliteral}{'Коринтианс'}],}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'Германия'}:\ [\textcolor{stringliteral}{'Бавария'},\ \textcolor{stringliteral}{'Боруссия\ Дортмунд'},\ \textcolor{stringliteral}{'РБ\ Лейпциг'}],}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'Испания'}:\ [\textcolor{stringliteral}{'Реал\ Мадрид'},\ \textcolor{stringliteral}{'Барселона'},\ \textcolor{stringliteral}{'Атлетико\ Мадрид'}],}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'Франция'}:\ [\textcolor{stringliteral}{'ПСЖ'},\ \textcolor{stringliteral}{'Олимпик\ Марсель'},\ \textcolor{stringliteral}{'Лион'}],}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'Италия'}:\ [\textcolor{stringliteral}{'Ювентус'},\ \textcolor{stringliteral}{'Милан'},\ \textcolor{stringliteral}{'Интер'}],}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{'Англия'}:\ [\textcolor{stringliteral}{'Манчестер\ Юнайтед'},\ \textcolor{stringliteral}{'Ливерпуль'},\ \textcolor{stringliteral}{'Челси'}],}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{'Аргентина'}:\ [\textcolor{stringliteral}{'Бока\ Хуниорс'},\ \textcolor{stringliteral}{'Ривер\ Плейт'}],}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{'Португалия'}:\ [\textcolor{stringliteral}{'Бенфика'},\ \textcolor{stringliteral}{'Порту'},\ \textcolor{stringliteral}{'Спортинг'}],}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{'Нидерланды'}:\ [\textcolor{stringliteral}{'Аякс'},\ \textcolor{stringliteral}{'ПСВ'},\ \textcolor{stringliteral}{'Фейеноорд'}]}
+\DoxyCodeLine{00012\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacegendata_aa46a3f4f5e20694b14ffea69522c6d19}\index{gendata@{gendata}!countries@{countries}}
+\index{countries@{countries}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{countries}{countries}}
+{\footnotesize\ttfamily \label{namespacegendata_aa46a3f4f5e20694b14ffea69522c6d19} 
+list gendata.\+countries}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'Россия'},\ \textcolor{stringliteral}{'Бразилия'},\ \textcolor{stringliteral}{'Германия'},\ \textcolor{stringliteral}{'Испания'},\ \textcolor{stringliteral}{'Франция'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'Италия'},\ \textcolor{stringliteral}{'Англия'},\ \textcolor{stringliteral}{'Аргентина'},\ \textcolor{stringliteral}{'Португалия'},\ \textcolor{stringliteral}{'Нидерланды'}}
+\DoxyCodeLine{00004\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacegendata_adbc3f63a6a9bfdac28546b618a001ed1}\index{gendata@{gendata}!data@{data}}
+\index{data@{data}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{namespacegendata_adbc3f63a6a9bfdac28546b618a001ed1} 
+gendata.\+data = \mbox{\hyperlink{namespacegendata_a86b9701fb900d76832eecca008f3dd87}{generate\+\_\+teams}}(i)}
+
+\Hypertarget{namespacegendata_a45463bc76e5ddaf5cec47c0e6f9e1505}\index{gendata@{gendata}!fake@{fake}}
+\index{fake@{fake}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{fake}{fake}}
+{\footnotesize\ttfamily \label{namespacegendata_a45463bc76e5ddaf5cec47c0e6f9e1505} 
+gendata.\+fake = Faker()}
+
+\Hypertarget{namespacegendata_aeb4b164a022373978db12ef19b0fac3c}\index{gendata@{gendata}!filename@{filename}}
+\index{filename@{filename}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{namespacegendata_aeb4b164a022373978db12ef19b0fac3c} 
+str gendata.\+filename = f"{}dataset\+\_\+\{i\}.csv"{}}
+
+\Hypertarget{namespacegendata_a2c917a34167d38bd2aed8c1a3b456863}\index{gendata@{gendata}!position\_probs@{position\_probs}}
+\index{position\_probs@{position\_probs}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{position\_probs}{position\_probs}}
+{\footnotesize\ttfamily \label{namespacegendata_a2c917a34167d38bd2aed8c1a3b456863} 
+list gendata.\+position\+\_\+probs = \mbox{[}0.\+1, 0.\+3, 0.\+3, 0.\+3\mbox{]}}
+
+\Hypertarget{namespacegendata_ac6011555d02d32471e3cabaef19573cc}\index{gendata@{gendata}!positions@{positions}}
+\index{positions@{positions}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{positions}{positions}}
+{\footnotesize\ttfamily \label{namespacegendata_ac6011555d02d32471e3cabaef19573cc} 
+list gendata.\+positions = \mbox{[}\textquotesingle{}вратарь\textquotesingle{}, \textquotesingle{}защитник\textquotesingle{}, \textquotesingle{}полузащитник\textquotesingle{}, \textquotesingle{}нападающий\textquotesingle{}\mbox{]}}
+
+\Hypertarget{namespacegendata_abe5b43d1cb75641c8b692ffb6e46b945}\index{gendata@{gendata}!sample\_sizes@{sample\_sizes}}
+\index{sample\_sizes@{sample\_sizes}!gendata@{gendata}}
+\doxysubsubsection{\texorpdfstring{sample\_sizes}{sample\_sizes}}
+{\footnotesize\ttfamily \label{namespacegendata_abe5b43d1cb75641c8b692ffb6e46b945} 
+list gendata.\+sample\+\_\+sizes = \mbox{[}100, 200, 500, 1000, 1200, 1500, 2000, 5000, 10000, 50000\mbox{]}}
+

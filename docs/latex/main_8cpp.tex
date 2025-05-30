@@ -1,0 +1,282 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Основной файл программы для сравнения алгоритмов сортировки  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include "{}football.\+h"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T$>$ }\\void \mbox{\hyperlink{main_8cpp_a547a276b608c72b8c8eee2a2ebc94404}{quick\+Sort}} (T \texorpdfstring{$\ast$}{*}a, long N)
+\begin{DoxyCompactList}\small\item\em Быстрая сортировка (Quick Sort) по убыванию \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\void \mbox{\hyperlink{main_8cpp_afde4f981d566747cf327fe1f5fc0b49e}{down\+Heap}} (T a\mbox{[}$\,$\mbox{]}, long k, long n)
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция для пирамидальной сортировки (Heap Sort) \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\void \mbox{\hyperlink{main_8cpp_a13e11eb964916a68da328cc4814c91b6}{heap\+Sort}} (T a\mbox{[}$\,$\mbox{]}, long size)
+\begin{DoxyCompactList}\small\item\em Пирамидальная сортировка (Heap Sort) по убыванию \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\void \mbox{\hyperlink{main_8cpp_a396276077e6b9a828d2ef01853c09f3c}{sort\+\_\+new}} (T \texorpdfstring{$\ast$}{*}arr, long size)
+\begin{DoxyCompactList}\small\item\em Обертка для стандартной сортировки (std\+::sort) по убыванию \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\void \mbox{\hyperlink{main_8cpp_aca62f1f472d6bce9be2177ad6d9d989d}{merge}} (T arr\mbox{[}$\,$\mbox{]}, int l, int m, int r)
+\begin{DoxyCompactList}\small\item\em Функция слияния для сортировки слиянием \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\void \mbox{\hyperlink{main_8cpp_a21cf5bd4b30c166a125d513f67bf6d67}{merge\+Sort\+Recursive}} (T arr\mbox{[}$\,$\mbox{]}, int l, int r)
+\begin{DoxyCompactList}\small\item\em Рекурсивная часть сортировки слиянием \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\void \mbox{\hyperlink{main_8cpp_a03a3680ff1ce04f3880666c8883098a7}{merge\+Sort}} (T arr\mbox{[}$\,$\mbox{]}, long size)
+\begin{DoxyCompactList}\small\item\em Сортировка слиянием (Merge Sort) по убыванию \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ad9fefbabee2b3677961cc135fd6854d2}{read\+CSV}} (std\+::string filename, int N, \mbox{\hyperlink{class_football}{Football}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Чтение данных из CSV-\/файла \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Основной файл программы для сравнения алгоритмов сортировки 
+
+\begin{DoxyAuthor}{Author}
+Кирилл Моисеенко 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2023
+\end{DoxyDate}
+Программа считывает данные о футболистах из CSV-\/файлов, выполняет сортировку четырьмя разными алгоритмами, измеряет время выполнения и сохраняет результаты. 
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_afde4f981d566747cf327fe1f5fc0b49e}\index{main.cpp@{main.cpp}!downHeap@{downHeap}}
+\index{downHeap@{downHeap}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{downHeap()}{downHeap()}}
+{\footnotesize\ttfamily \label{main_8cpp_afde4f981d566747cf327fe1f5fc0b49e} 
+template$<$class T$>$ \\
+void down\+Heap (\begin{DoxyParamCaption}\item[{T}]{a}{\mbox{[}$\,$\mbox{]}, }\item[{long}]{k}{, }\item[{long}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Вспомогательная функция для пирамидальной сортировки (Heap Sort) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип элементов массива \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Массив \\
+\hline
+{\em k} & Текущий узел \\
+\hline
+{\em n} & Размер кучи \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a13e11eb964916a68da328cc4814c91b6}\index{main.cpp@{main.cpp}!heapSort@{heapSort}}
+\index{heapSort@{heapSort}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{heapSort()}{heapSort()}}
+{\footnotesize\ttfamily \label{main_8cpp_a13e11eb964916a68da328cc4814c91b6} 
+template$<$class T$>$ \\
+void heap\+Sort (\begin{DoxyParamCaption}\item[{T}]{a}{\mbox{[}$\,$\mbox{]}, }\item[{long}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Пирамидальная сортировка (Heap Sort) по убыванию 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип элементов массива \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Массив \\
+\hline
+{\em size} & Размер массива\\
+\hline
+\end{DoxyParams}
+Алгоритм\+:
+\begin{DoxyEnumerate}
+\item Построение пирамиды
+\item Последовательное извлечение максимальных элементов 
+\end{DoxyEnumerate}\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Главная функция программы 
+
+\begin{DoxyReturn}{Returns}
+0 при успешном завершении
+\end{DoxyReturn}
+Выполняет следующие действия\+:
+\begin{DoxyEnumerate}
+\item Открывает файл для записи результатов времени
+\item Определяет наборы данных для обработки
+\item Для каждого набора данных\+:
+\begin{DoxyItemize}
+\item Читает данные из CSV
+\item Выполняет сортировку 4 алгоритмами
+\item Измеряет время выполнения
+\item Сохраняет отсортированные данные
+\item Записывает результаты времени
+\end{DoxyItemize}
+\item Закрывает файл результатов 
+\end{DoxyEnumerate}\Hypertarget{main_8cpp_aca62f1f472d6bce9be2177ad6d9d989d}\index{main.cpp@{main.cpp}!merge@{merge}}
+\index{merge@{merge}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{main_8cpp_aca62f1f472d6bce9be2177ad6d9d989d} 
+template$<$class T$>$ \\
+void merge (\begin{DoxyParamCaption}\item[{T}]{arr}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{l}{, }\item[{int}]{m}{, }\item[{int}]{r}{}\end{DoxyParamCaption})}
+
+
+
+Функция слияния для сортировки слиянием 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип элементов массива \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Массив \\
+\hline
+{\em l} & Левый индекс \\
+\hline
+{\em m} & Серединный индекс \\
+\hline
+{\em r} & Правый индекс \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a03a3680ff1ce04f3880666c8883098a7}\index{main.cpp@{main.cpp}!mergeSort@{mergeSort}}
+\index{mergeSort@{mergeSort}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{mergeSort()}{mergeSort()}}
+{\footnotesize\ttfamily \label{main_8cpp_a03a3680ff1ce04f3880666c8883098a7} 
+template$<$class T$>$ \\
+void merge\+Sort (\begin{DoxyParamCaption}\item[{T}]{arr}{\mbox{[}$\,$\mbox{]}, }\item[{long}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Сортировка слиянием (Merge Sort) по убыванию 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип элементов массива \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Массив \\
+\hline
+{\em size} & Размер массива \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a21cf5bd4b30c166a125d513f67bf6d67}\index{main.cpp@{main.cpp}!mergeSortRecursive@{mergeSortRecursive}}
+\index{mergeSortRecursive@{mergeSortRecursive}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{mergeSortRecursive()}{mergeSortRecursive()}}
+{\footnotesize\ttfamily \label{main_8cpp_a21cf5bd4b30c166a125d513f67bf6d67} 
+template$<$class T$>$ \\
+void merge\+Sort\+Recursive (\begin{DoxyParamCaption}\item[{T}]{arr}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{l}{, }\item[{int}]{r}{}\end{DoxyParamCaption})}
+
+
+
+Рекурсивная часть сортировки слиянием 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип элементов массива \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Массив \\
+\hline
+{\em l} & Левый индекс \\
+\hline
+{\em r} & Правый индекс \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8cpp_a547a276b608c72b8c8eee2a2ebc94404}\index{main.cpp@{main.cpp}!quickSort@{quickSort}}
+\index{quickSort@{quickSort}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{quickSort()}{quickSort()}}
+{\footnotesize\ttfamily \label{main_8cpp_a547a276b608c72b8c8eee2a2ebc94404} 
+template$<$class T$>$ \\
+void quick\+Sort (\begin{DoxyParamCaption}\item[{T \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{long}]{N}{}\end{DoxyParamCaption})}
+
+
+
+Быстрая сортировка (Quick Sort) по убыванию 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип элементов массива \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Указатель на массив \\
+\hline
+{\em N} & Количество элементов\\
+\hline
+\end{DoxyParams}
+Алгоритм\+:
+\begin{DoxyEnumerate}
+\item Выбор опорного элемента (середина массива)
+\item Разделение массива на две части
+\item Рекурсивная сортировка частей 
+\end{DoxyEnumerate}\Hypertarget{main_8cpp_ad9fefbabee2b3677961cc135fd6854d2}\index{main.cpp@{main.cpp}!readCSV@{readCSV}}
+\index{readCSV@{readCSV}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{readCSV()}{readCSV()}}
+{\footnotesize\ttfamily \label{main_8cpp_ad9fefbabee2b3677961cc135fd6854d2} 
+void read\+CSV (\begin{DoxyParamCaption}\item[{std\+::string}]{filename}{, }\item[{int}]{N}{, }\item[{\mbox{\hyperlink{class_football}{Football}} \texorpdfstring{$\ast$}{*}}]{result}{}\end{DoxyParamCaption})}
+
+
+
+Чтение данных из CSV-\/файла 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Имя файла \\
+\hline
+{\em N} & Количество записей для чтения \\
+\hline
+{\em result} & Указатель на массив для результатов\\
+\hline
+\end{DoxyParams}
+Формат CSV-\/файла\+: country,full\+\_\+name,club,position,matches,goals \Hypertarget{main_8cpp_a396276077e6b9a828d2ef01853c09f3c}\index{main.cpp@{main.cpp}!sort\_new@{sort\_new}}
+\index{sort\_new@{sort\_new}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{sort\_new()}{sort\_new()}}
+{\footnotesize\ttfamily \label{main_8cpp_a396276077e6b9a828d2ef01853c09f3c} 
+template$<$class T$>$ \\
+void sort\+\_\+new (\begin{DoxyParamCaption}\item[{T \texorpdfstring{$\ast$}{*}}]{arr}{, }\item[{long}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Обертка для стандартной сортировки (std\+::sort) по убыванию 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Тип элементов массива \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Указатель на массив \\
+\hline
+{\em size} & Размер массива \\
+\hline
+\end{DoxyParams}

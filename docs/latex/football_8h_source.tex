@@ -1,0 +1,41 @@
+\doxysection{football.\+h}
+\hypertarget{football_8h_source}{}\label{football_8h_source}\mbox{\hyperlink{football_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ FOOTBALL\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ FOOTBALL\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ \mbox{\hyperlink{class_football_abade82f6fd6f0dd29bfb9d77e9d15722}{country}};}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{class_football_a8e0f83cbc57def98cc320b0baa16d79e}{full\_name}};}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ \mbox{\hyperlink{class_football_a6c0465000f174ffa0d18d0e3c904c7d5}{club}};}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{class_football_a9a7c858061f0aacbe29a03a443204632}{position}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_football_ae611a97246815f3302b07e51af4fe034}{matches}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_football_adb1f37e971eff1d103654406b7585be2}{goals}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}(std::string\ \mbox{\hyperlink{class_football_abade82f6fd6f0dd29bfb9d77e9d15722}{country}},\ std::string\ \mbox{\hyperlink{class_football_a8e0f83cbc57def98cc320b0baa16d79e}{full\_name}},\ std::string\ \mbox{\hyperlink{class_football_a6c0465000f174ffa0d18d0e3c904c7d5}{club}},\ std::string\ \mbox{\hyperlink{class_football_a9a7c858061f0aacbe29a03a443204632}{position}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_football_ae611a97246815f3302b07e51af4fe034}{matches}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_football_adb1f37e971eff1d103654406b7585be2}{goals}});}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ other);}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_football_a63e923e669b89bbf1ba258788e018384}{\string~Football}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Операторы\ сравнения}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_football_a7a147d80858c6be54da1f75780a069e8}{operator>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_football_ad0da8a53c1b0e8f321de9425e32740ef}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_football_a6c6c7bbaecce380942cab5ecdcd3e054}{operator<=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_football_a6adc2bda13ac7012eb941f5f7f92c9f7}{operator>=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_football_aa23a530b110973920caba5c2d96c19d1}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ \mbox{\hyperlink{class_football_a79d4744c5d473ba21ba189ecb19f91d5}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ other);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_football_aaab914383bada227dfc74d795f59a3e6}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}}\&\ football);}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,315 @@
+\doxysection{Football Class Reference}
+\hypertarget{class_football}{}\label{class_football}\index{Football@{Football}}
+
+
+Класс, представляющий футболиста  
+
+
+
+
+{\ttfamily \#include $<$football.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_football_a3bdb21858d0160ccdafa922fa036abd9}{Football}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_football_a22b79346cc2ff13ecf5980502aa6344a}{Football}} (std\+::string \mbox{\hyperlink{class_football_abade82f6fd6f0dd29bfb9d77e9d15722}{country}}, std\+::string \mbox{\hyperlink{class_football_a8e0f83cbc57def98cc320b0baa16d79e}{full\+\_\+name}}, std\+::string \mbox{\hyperlink{class_football_a6c0465000f174ffa0d18d0e3c904c7d5}{club}}, std\+::string \mbox{\hyperlink{class_football_a9a7c858061f0aacbe29a03a443204632}{position}}, int \mbox{\hyperlink{class_football_ae611a97246815f3302b07e51af4fe034}{matches}}, int \mbox{\hyperlink{class_football_adb1f37e971eff1d103654406b7585be2}{goals}})
+\begin{DoxyCompactList}\small\item\em Параметризованный конструктор \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_football_aab6315a8ac24402ab21f4d0dc189bc5f}{Football}} (const \mbox{\hyperlink{class_football}{Football}} \&other)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_football_a63e923e669b89bbf1ba258788e018384}{\texorpdfstring{$\sim$}{\string~}\+Football}} ()=default
+\item 
+bool \mbox{\hyperlink{class_football_a7a147d80858c6be54da1f75780a069e8}{operator$>$}} (const \mbox{\hyperlink{class_football}{Football}} \&other) const
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}больше"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_football_ad0da8a53c1b0e8f321de9425e32740ef}{operator$<$}} (const \mbox{\hyperlink{class_football}{Football}} \&other) const
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}меньше"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_football_a6c6c7bbaecce380942cab5ecdcd3e054}{operator$<$=}} (const \mbox{\hyperlink{class_football}{Football}} \&other) const
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}меньше или равно"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_football_a6adc2bda13ac7012eb941f5f7f92c9f7}{operator$>$=}} (const \mbox{\hyperlink{class_football}{Football}} \&other) const
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}больше или равно"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_football_aa23a530b110973920caba5c2d96c19d1}{operator==}} (const \mbox{\hyperlink{class_football}{Football}} \&other) const
+\begin{DoxyCompactList}\small\item\em Оператор сравнения "{}равно"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_football}{Football}} \& \mbox{\hyperlink{class_football_a79d4744c5d473ba21ba189ecb19f91d5}{operator=}} (const \mbox{\hyperlink{class_football}{Football}} \&other)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_football_abade82f6fd6f0dd29bfb9d77e9d15722}{country}}
+\item 
+std\+::string \mbox{\hyperlink{class_football_a8e0f83cbc57def98cc320b0baa16d79e}{full\+\_\+name}}
+\item 
+std\+::string \mbox{\hyperlink{class_football_a6c0465000f174ffa0d18d0e3c904c7d5}{club}}
+\item 
+std\+::string \mbox{\hyperlink{class_football_a9a7c858061f0aacbe29a03a443204632}{position}}
+\item 
+int \mbox{\hyperlink{class_football_ae611a97246815f3302b07e51af4fe034}{matches}}
+\item 
+int \mbox{\hyperlink{class_football_adb1f37e971eff1d103654406b7585be2}{goals}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_football_aaab914383bada227dfc74d795f59a3e6}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_football}{Football}} \&football)
+\begin{DoxyCompactList}\small\item\em Оператор вывода в поток \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий футболиста 
+
+Содержит информацию о футболисте\+: страну, ФИО, клуб, амплуа, количество матчей и голов. 
+
+\label{doc-constructors}
+\Hypertarget{class_football_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_football_a3bdb21858d0160ccdafa922fa036abd9}\index{Football@{Football}!Football@{Football}}
+\index{Football@{Football}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{Football()}{Football()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_football_a3bdb21858d0160ccdafa922fa036abd9} 
+Football\+::\+Football (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор по умолчанию 
+
+Инициализирует все строковые поля пустыми строками, числовые поля -\/ нулевыми значениями. \Hypertarget{class_football_a22b79346cc2ff13ecf5980502aa6344a}\index{Football@{Football}!Football@{Football}}
+\index{Football@{Football}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{Football()}{Football()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_football_a22b79346cc2ff13ecf5980502aa6344a} 
+Football\+::\+Football (\begin{DoxyParamCaption}\item[{std\+::string}]{country}{, }\item[{std\+::string}]{full\+\_\+name}{, }\item[{std\+::string}]{club}{, }\item[{std\+::string}]{position}{, }\item[{int}]{matches}{, }\item[{int}]{goals}{}\end{DoxyParamCaption})}
+
+
+
+Параметризованный конструктор 
+
+
+\begin{DoxyParams}{Parameters}
+{\em country} & Страна футболиста \\
+\hline
+{\em full\+\_\+name} & Полное имя футболиста \\
+\hline
+{\em club} & Футбольный клуб \\
+\hline
+{\em position} & Амплуа (вратарь, защитник и т.\+д.) \\
+\hline
+{\em matches} & Количество проведенных матчей \\
+\hline
+{\em goals} & Количество забитых мячей (для вратарей -\/ отрицательное значение)\\
+\hline
+\end{DoxyParams}
+Создает объект \doxylink{class_football}{Football} с заданными характеристиками футболиста. \Hypertarget{class_football_aab6315a8ac24402ab21f4d0dc189bc5f}\index{Football@{Football}!Football@{Football}}
+\index{Football@{Football}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{Football()}{Football()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_football_aab6315a8ac24402ab21f4d0dc189bc5f} 
+Football\+::\+Football (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор копирования 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для копирования\\
+\hline
+\end{DoxyParams}
+Создает новый объект как копию переданного объекта. \Hypertarget{class_football_a63e923e669b89bbf1ba258788e018384}\index{Football@{Football}!````~Football@{\texorpdfstring{$\sim$}{\string~}Football}}
+\index{````~Football@{\texorpdfstring{$\sim$}{\string~}Football}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Football()}{\string~Football()}}
+{\footnotesize\ttfamily \label{class_football_a63e923e669b89bbf1ba258788e018384} 
+Football\+::\texorpdfstring{$\sim$}{\string~}\+Football (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_football_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_football_ad0da8a53c1b0e8f321de9425e32740ef}\index{Football@{Football}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{class_football_ad0da8a53c1b0e8f321de9425e32740ef} 
+bool Football\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор сравнения "{}меньше"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для сравнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если текущий объект "{}меньше"{} other, иначе false 
+\end{DoxyReturn}
+\Hypertarget{class_football_a6c6c7bbaecce380942cab5ecdcd3e054}\index{Football@{Football}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{class_football_a6c6c7bbaecce380942cab5ecdcd3e054} 
+bool Football\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор сравнения "{}меньше или равно"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для сравнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если текущий объект "{}меньше или равен"{} other, иначе false 
+\end{DoxyReturn}
+\Hypertarget{class_football_a79d4744c5d473ba21ba189ecb19f91d5}\index{Football@{Football}!operator=@{operator=}}
+\index{operator=@{operator=}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_football_a79d4744c5d473ba21ba189ecb19f91d5} 
+\mbox{\hyperlink{class_football}{Football}} \& Football\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для копирования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на текущий объект 
+\end{DoxyReturn}
+\Hypertarget{class_football_aa23a530b110973920caba5c2d96c19d1}\index{Football@{Football}!operator==@{operator==}}
+\index{operator==@{operator==}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_football_aa23a530b110973920caba5c2d96c19d1} 
+bool Football\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор сравнения "{}равно"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для сравнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если объекты равны, иначе false
+\end{DoxyReturn}
+Объекты считаются равными, если совпадают\+:
+\begin{DoxyItemize}
+\item Количество матчей
+\item ФИО
+\item Количество мячей 
+\end{DoxyItemize}\Hypertarget{class_football_a7a147d80858c6be54da1f75780a069e8}\index{Football@{Football}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{class_football_a7a147d80858c6be54da1f75780a069e8} 
+bool Football\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор сравнения "{}больше"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для сравнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если текущий объект "{}больше"{} other, иначе false
+\end{DoxyReturn}
+Сравнение производится по трем критериям (в порядке приоритета)\+:
+\begin{DoxyEnumerate}
+\item Количество матчей (по убыванию)
+\item ФИО (по возрастанию)
+\item Количество мячей (по убыванию) 
+\end{DoxyEnumerate}\Hypertarget{class_football_a6adc2bda13ac7012eb941f5f7f92c9f7}\index{Football@{Football}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{class_football_a6adc2bda13ac7012eb941f5f7f92c9f7} 
+bool Football\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Оператор сравнения "{}больше или равно"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для сравнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true если текущий объект "{}больше или равен"{} other, иначе false 
+\end{DoxyReturn}
+
+
+\label{doc-related-members}
+\Hypertarget{class_football_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_football_aaab914383bada227dfc74d795f59a3e6}\index{Football@{Football}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_football_aaab914383bada227dfc74d795f59a3e6} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_football}{Football}} \&}]{football}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Оператор вывода в поток 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Выходной поток \\
+\hline
+{\em football} & Объект для вывода \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ссылка на выходной поток
+\end{DoxyReturn}
+Формат вывода\+: country,full\+\_\+name,club,position,matches,goals 
+
+\label{doc-variable-members}
+\Hypertarget{class_football_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_football_a6c0465000f174ffa0d18d0e3c904c7d5}\index{Football@{Football}!club@{club}}
+\index{club@{club}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{club}{club}}
+{\footnotesize\ttfamily \label{class_football_a6c0465000f174ffa0d18d0e3c904c7d5} 
+std\+::string Football\+::club\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_football_abade82f6fd6f0dd29bfb9d77e9d15722}\index{Football@{Football}!country@{country}}
+\index{country@{country}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{country}{country}}
+{\footnotesize\ttfamily \label{class_football_abade82f6fd6f0dd29bfb9d77e9d15722} 
+std\+::string Football\+::country\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_football_a8e0f83cbc57def98cc320b0baa16d79e}\index{Football@{Football}!full\_name@{full\_name}}
+\index{full\_name@{full\_name}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{full\_name}{full\_name}}
+{\footnotesize\ttfamily \label{class_football_a8e0f83cbc57def98cc320b0baa16d79e} 
+std\+::string Football\+::full\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_football_adb1f37e971eff1d103654406b7585be2}\index{Football@{Football}!goals@{goals}}
+\index{goals@{goals}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{goals}{goals}}
+{\footnotesize\ttfamily \label{class_football_adb1f37e971eff1d103654406b7585be2} 
+int Football\+::goals\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_football_ae611a97246815f3302b07e51af4fe034}\index{Football@{Football}!matches@{matches}}
+\index{matches@{matches}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{matches}{matches}}
+{\footnotesize\ttfamily \label{class_football_ae611a97246815f3302b07e51af4fe034} 
+int Football\+::matches\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_football_a9a7c858061f0aacbe29a03a443204632}\index{Football@{Football}!position@{position}}
+\index{position@{position}!Football@{Football}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \label{class_football_a9a7c858061f0aacbe29a03a443204632} 
+std\+::string Football\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{football_8h}{football.\+h}}\item 
+\mbox{\hyperlink{football_8cpp}{football.\+cpp}}\end{DoxyCompactItemize}
