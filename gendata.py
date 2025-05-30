@@ -52,38 +52,6 @@ def generate_teams(n):
         data.append([country, full_name, club, position, matches, goals])
     return data
 
-# # Генерация данных для каждого размера выборки
-# for sample_size in sample_sizes:
-#     data = []
-#     for _ in range(sample_size):
-#         country = random.choice(countries)
-#         full_name = fake.name()
-#         club = random.choice(clubs[country])
-#         position = np.random.choice(positions, p=position_probs)
-#         matches = random.randint(1, 150)
-        
-#         if position == 'вратарь':
-#             goals = -random.randint(0, 50)
-#         elif position == 'защитник':
-#             goals = random.randint(0, 20)
-#         elif position == 'полузащитник':
-#             goals = random.randint(5, 30)
-#         else:  # нападающий
-#             goals = random.randint(10, 50)
-        
-#         data.append([country, full_name, club, position, matches, goals])
-
-# # Создание и сохранение DataFrame
-# df = pd.DataFrame(
-#     data,
-#     columns=['country', 'full_name', 'club', 'position', 'matches', 'goals']
-# )
-# df.to_csv(f'football_players_{sample_size}.csv', index=False, encoding='utf-8')
-
-# print(f'Файл с {sample_size} записями создан успешно')
-
-# #print(generate_teams(3))
-
 def saveCSV(data, filename):
     df = pd.DataFrame(data, columns=['country', 'full_name', 'club', 'position', 'matches', 'goals'])
     file_path = f"/Users/kirillmoiseenko/VS Code/MD hse/pm1_lab-laba1/datasets/{filename}" #f"/home/install/pm1_lab/datasets/{filename}"

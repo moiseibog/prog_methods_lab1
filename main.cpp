@@ -304,14 +304,14 @@ int main() {
       auto t1_end = std::chrono::high_resolution_clock::now();
       auto t_stdsort = std::chrono::duration<double, std::milli>(t1_end - t1_start).count();
 
-      std::ofstream fout1(path_sort + "stdsort_" + std::to_string(N) + ".txt"); 
-      for (int j = 0; j < N; ++j) {
-        fout1 << a1[j] << "\n"; 
-      }
-      fout1.close(); 
-      std::cout << "std::sort for dataset of size " << N << " is finished." << std::endl;
+      // std::ofstream fout1(path_sort + "stdsort_" + std::to_string(N) + ".txt"); 
+      // for (int j = 0; j < N; ++j) {
+      //   fout1 << a1[j] << "\n"; 
+      // }
+      // fout1.close(); 
+      // std::cout << "std::sort for dataset of size " << N << " is finished." << std::endl;
 
-      delete[] a1;
+      // delete[] a1;
 
       // --- quickSort  ---
 
@@ -325,14 +325,14 @@ int main() {
       auto t2_end = std::chrono::high_resolution_clock::now();
       auto t_quicksort = std::chrono::duration<double, std::milli>(t2_end - t2_start).count();
       
-      std::ofstream fout2(path_sort + "quicksort_" + std::to_string(N) + ".txt"); 
-      for (int j = 0; j < N; ++j) {
-        fout2 << a2[j] << "\n"; 
-      }
-      fout2.close(); 
-      std::cout << "quickSort for dataset of size " << N << " is finished." << std::endl;
+      // std::ofstream fout2(path_sort + "quicksort_" + std::to_string(N) + ".txt"); 
+      // for (int j = 0; j < N; ++j) {
+      //   fout2 << a2[j] << "\n"; 
+      // }
+      // fout2.close(); 
+      // std::cout << "quickSort for dataset of size " << N << " is finished." << std::endl;
 
-      delete[] a2;
+      // delete[] a2;
 
       // --- heapSort  ---
 
@@ -346,14 +346,14 @@ int main() {
       auto t3_end = std::chrono::high_resolution_clock::now();
       auto t_heapsort = std::chrono::duration<double, std::milli>(t3_end - t3_start).count();
       
-      std::ofstream fout3(path_sort + "heapsort_" + std::to_string(N) + ".txt"); 
-      for (int j = 0; j < N; ++j) {
-        fout3 << a3[j] << "\n"; 
-      }
-      fout3.close(); 
-      std::cout << "heapSort for dataset of size " << N << " is finished." << std::endl;
+      // std::ofstream fout3(path_sort + "heapsort_" + std::to_string(N) + ".txt"); 
+      // for (int j = 0; j < N; ++j) {
+      //   fout3 << a3[j] << "\n"; 
+      // }
+      // fout3.close(); 
+      // std::cout << "heapSort for dataset of size " << N << " is finished." << std::endl;
 
-      delete[] a3;
+      // delete[] a3;
 
       out << N << "," << t_stdsort << "," << t_quicksort << "," << t_heapsort << "," << t_merge << "\n";
     }
